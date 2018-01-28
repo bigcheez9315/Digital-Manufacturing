@@ -37,26 +37,35 @@ while True:
         break
     except ValueError:
         print("Oops! That was not a valid number! Try again...")
+   
+print("Box dimensions " + str(L)+U.lower()+" x "+str(W)+U.lower()+" x "+str(H)+U.lower()+".")      
+
+
+if U.lower() == "in":
+    L = L*25.4
+    W = W*25.4
+    H = H*25.4
+
 
 h = H/2
 w = W/2
 F = H
 B = 2*H
 bbL = F + L + B
-bbW = W + 2*H
-
-print("Box dimensions " + str(L)+U.lower()+" x "+str(W)+U.lower()+" x "+str(H)+U.lower()+".")      
-
+bbW = W + 2*H 
+    
+    
+    
 dwg = svgwrite.Drawing('laserCutBox.svg', profile='tiny')
 
 #dwg.add(dwg.rect(insert=(0*mm, 0*mm), size=(in2mm(sL)*mm, in2mm(sW)*mm),fill='none', stroke='red', stroke_width=3))
 
-dwg.add(dwg.line((0,0), (W, 0), stroke=svgwrite.rgb(255,0,0, 'RGB')))
-dwg.add(dwg.line((W,0), (W, L), stroke=svgwrite.rgb(255,0,0, 'RGB')))
-dwg.add(dwg.line((W,L), (0, W), stroke=svgwrite.rgb(255,0,0, 'RGB')))
-dwg.add(dwg.line((0,W), (0, 0), stroke=svgwrite.rgb(255,0,0, 'RGB')))
+dwg.add(dwg.line((0,0), (W*mm, 0), stroke=svgwrite.rgb(255,0,0, 'RGB')))
+dwg.add(dwg.line((W*mm,0), (W*mm, L*mm), stroke=svgwrite.rgb(255,0,0, 'RGB')))
+dwg.add(dwg.line((W*mm, L*mm), (0, L*mm), stroke=svgwrite.rgb(255,0,0, 'RGB')))
+dwg.add(dwg.line((0,L*mm), (0, 0), stroke=svgwrite.rgb(255,0,0, 'RGB')))
 
-dwg.add(dwg.text('Test', insert=(W/2, H/2), fill='red'))
+#dwg.add(dwg.text('Test', x=(W/2), y= (L/2), fill='red'))
 
 dwg.save()
 
@@ -71,4 +80,3 @@ dwg.save()
 #dwg.add(dwg.rect(insert=(5*cm, 5*cm), size=(45*mm, 45*mm),fill='blue', stroke='red', stroke_width=3))
 
 #dwg.add(dwg.text('Test', insert=(0, 0.2), fill='red'))
-
