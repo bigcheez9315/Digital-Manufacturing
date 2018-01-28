@@ -1,7 +1,6 @@
 # -*- coding: utf-8 -*-
 """
 Created on Mon Jan 22 21:23:15 2018
-
 @author: Nikita Komachkov
 Sheet size 24"x36"
 bbL = bounding box length
@@ -52,8 +51,17 @@ dwg = svgwrite.Drawing('laserCutBox.svg', profile='tiny')
 
 #dwg.add(dwg.rect(insert=(0*mm, 0*mm), size=(in2mm(sL)*mm, in2mm(sW)*mm),fill='none', stroke='red', stroke_width=3))
 
-dwg.add(dwg.line((0,H), (0, H+W), stroke=svgwrite.rgb(0,0,0, 'RGB')))
-dwg.add(dwg.line((6,H), (w, H+W), stroke=svgwrite.rgb(0,0,0, 'RGB')))
+dwg.add(dwg.line((0,0), (W, 0), stroke=svgwrite.rgb(255,0,0, 'RGB')))
+dwg.add(dwg.line((W,0), (W, L), stroke=svgwrite.rgb(255,0,0, 'RGB')))
+dwg.add(dwg.line((W,L), (0, W), stroke=svgwrite.rgb(255,0,0, 'RGB')))
+dwg.add(dwg.line((0,W), (0, 0), stroke=svgwrite.rgb(255,0,0, 'RGB')))
+
+dwg.add(dwg.text('Test', insert=(W/2, H/2), fill='red'))
+
+dwg.save()
+
+#dwg.add(dwg.line((0,H), (0, H+W), stroke=svgwrite.rgb(0,0,0, 'RGB')))
+#dwg.add(dwg.line((6,H), (w, H+W), stroke=svgwrite.rgb(0,0,0, 'RGB')))
 # Draw a line from position A to position B of RGB color
 #dwg.add(dwg.line((0, 0), (10*cm, 0), stroke=svgwrite.rgb(255, 0,0 , 'RGB')))
 #dwg.add(dwg.line((10*cm, 0), (10*cm, 10*cm), stroke=svgwrite.rgb(0, 0, 0, '%')))
@@ -63,4 +71,4 @@ dwg.add(dwg.line((6,H), (w, H+W), stroke=svgwrite.rgb(0,0,0, 'RGB')))
 #dwg.add(dwg.rect(insert=(5*cm, 5*cm), size=(45*mm, 45*mm),fill='blue', stroke='red', stroke_width=3))
 
 #dwg.add(dwg.text('Test', insert=(0, 0.2), fill='red'))
-dwg.save()
+
