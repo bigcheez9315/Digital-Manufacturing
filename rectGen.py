@@ -11,7 +11,9 @@ sW = 24 # Sheet width in inches
 # I think the units are in pixels so let's convert from inches to pixels. 
 # One inch is equivalent to 75 pixels according to what I found online
 def in2Px(inch):
-    return inch*225
+    return inch*75
+def mm2Px(mm):
+    return (mm/25.4)*75
 
 U = ""
 while U.lower() not in ("in", "mm"):
@@ -28,8 +30,12 @@ while True:
         print("Oops! That was not a valid number! Try again...")
         
 if U.lower() == "in":
-    L = L*75
-    W = W*75       
+    L = in2Px(L)
+    W = in2Px(W)
+    
+if U.lower() == "mm":
+    L = mm2Px(L)
+    W = mm2Px(W)
 
 
 filename = "rectGen.svg"
