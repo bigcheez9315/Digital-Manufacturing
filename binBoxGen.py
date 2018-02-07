@@ -18,15 +18,15 @@ import math
 sL = 36 # Sheet length in inches
 sW = 24 # Sheet width in inches
 
-# I think the units are in pixels so let's convert from inches to pixels. 
-# One inch is equivalent to 75 pixels according to what I found online
-def in2Px(inch):
-    return inch*75
-def mm2Px(mm):
-    return (mm/25.4)*75
 
-sL = in2Px(sL)
-sW = in2Px(sW)
+# Output will always be in mm so if the user gives units in terms of inches
+# convert to mm
+
+def in2mm(inch):
+    return inch*25.4
+
+sL = in2mm(sL)
+sW = in2mm(sW)
 # Find out what units the user prefers to give his units
     
 U = ""
@@ -51,14 +51,14 @@ while True:
 dimensions = np.array([W, L, H, t])
 
 
-# Convert units from inches/millimeters to pixels using in2Px and mm2Px  
+# Convert units from inches to mm using in2mm() 
 if U.lower() == "in":
-    for i in np.nditer(dimensions):
-        i = in2Px(i)
+    W = in2mm(W)
+    L = in2mm(L)
+    H = in2mm(H)
+    t = in2mm(t)
     
-else:
-      for i in np.nditer(dimensions):
-        i = mm2Px(i)
+
 
 # Here are the x and y coordinates for the solid lines (cut all the way through)
 # as a function of L,W,H,and t
@@ -98,19 +98,22 @@ dashed_y = np.array([H+(W/2), H+(W/2),H+t,H+W-t, H+(W/2),H+(W/2), H, H+W,H+(W/2)
 # Shift the image a few pixels to the right and a few pixels down so its not
 # on the edge of the screen
 for i in range(0, len(x_pnts)):
-    x_pnts[i] = x_pnts[i] + 30
-    y_pnts[i] = y_pnts[i] + 30
+    x_pnts[i] = x_pnts[i] + 10
+    y_pnts[i] = y_pnts[i] + 10
 for i in range(0, len(dashed_x)):
-    dashed_x[i] = dashed_x[i] + 30
-    dashed_y[i] = dashed_y[i] + 30
+    dashed_x[i] = dashed_x[i] + 10
+    dashed_y[i] = dashed_y[i] + 10
 
 coordinates = zip(x_pnts, y_pnts)
 dashed_coordinates = zip(dashed_x, dashed_y)
 
 filename = "binBoxGen.svg"
 f = open(filename, "w+")
+
 f.write('<?xml version="1.0" encoding="UTF-8" ?>\n')
-f.write('<svg xmlns="http://www.w3.org/2000/svg" version="1.1">\n')
+f.write('<svg width="' + str(sW) + 'mm" height="' + str(sL) +
+        'mm" viewBox="0 0 ' + str(sW) + ' ' + str(sL) )
+f.write('" xmlns="http://www.w3.org/2000/svg" version="1.1">\n')
 
 # Make polygon of solid lines
 f.write('<polyline points="')
@@ -121,19 +124,30 @@ f.write('"\n')
 f.write('stroke-width="1" stroke = "red" fill="none" />\n')   
 
 # Make solid lines for the two pockets
-x1=(8*t+(3/2)*H) + 30
-y1=(8+.4*W+(17/3)*t)+ 30
+#pocket 1
+x1=(8*t+(3/2)*H) + 10
+y1=(H+.4*W+(17/3)*t)+ 10
 r=t/2
-x2=9*t+(3/2)*H+ 30
-y2=8+.4*W+ 30
+x2=9*t+(3/2)*H+ 10
+y2=H+.4*W+ 10
 
+# pocket 2 : y values are the same and radius is the same. X values change though
+x3 = 5.5*t+H+L
+x4 = 6.5*t+H+L
+# Draw pocket 1 (left pocket)
 f.write('<path d="M' + str(x1) + ' '+ str(y1) +
        '\n L ' +str(x1) + ' ' + str(y2) + 
         '\n A ' +str(r)+' '+str(r)+' 0 0 1 '+ str(x2) + ' '+ str(y2) +
         '\n L ' + str(x2) + ' ' + str(y1) +
         '\n A '+str(r)+' '+str(r)+' 0 0 1 '+ str(x1)+' '+str(y1) +
         '"\n stroke="red" fill="none" stroke-width="1"/>\n')
-        
+# Draw pocket 2(right pocket)
+f.write('<path d="M' + str(x3) + ' '+ str(y1) +
+       '\n L ' +str(x3) + ' ' + str(y2) + 
+        '\n A ' +str(r)+' '+str(r)+' 0 0 1 '+ str(x4) + ' '+ str(y2) +
+        '\n L ' + str(x4) + ' ' + str(y1) +
+        '\n A '+str(r)+' '+str(r)+' 0 0 1 '+ str(x3)+' '+str(y1) +
+        '"\n stroke="red" fill="none" stroke-width="1"/>\n')      
 # Make polygon of dashed lines
 
 for i in range(1,len(dashed_x)):
