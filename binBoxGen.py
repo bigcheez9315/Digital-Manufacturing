@@ -105,6 +105,11 @@ f.write('<text font-family="Verdana" font-size="' + str(fontSize) + '" x="' +str
 f.write('<text font-family="Verdana" font-size="' + str(fontSize) + '" x="' +str((-L/2)-(L/10)+x_offset) + '" y="' + str(y_offset-((-W/2)+(W/6))) +
         '" fill="black" transform="rotate(270, ' + str((-L/2)-(L/10)+x_offset) + ', ' + str(y_offset-((-W/2)+(W/6))) + ')">Manufacturing </text>\n')
 
+f.write('<text font-family="Verdana" font-size="' + str(fontSize) + '" x="' +str((L/2)+2*H+x_offset) + '" y="' + str(y_offset-((-W/2)+(W/3))) +
+        '" fill="black" transform="rotate(90, ' + str((-L/2)-(L/6)+x_offset) + ', ' + str(y_offset-((-W/2)+(W/3))) + ')">Hods </text>\n')
+f.write('<text font-family="Verdana" font-size="' + str(fontSize) + '" x="' +str((L/2)+2*H-W/12+x_offset) + '" y="' + str(y_offset-((-W/2)+(W/6))) +
+        '" fill="black" transform="rotate(90, ' + str((-L/2)-(L/10)+x_offset) + ', ' + str(y_offset-((-W/2)+(W/6))) + ')">Fun Box </text>\n')
+
 #Make solid lines for the two pockets
 #pocket 1
 x1=2*t-L/2+x_offset
