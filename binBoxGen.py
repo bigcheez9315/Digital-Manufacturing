@@ -69,7 +69,7 @@ f = open(filename, "w+")
 f.write('<?xml version="1.0" encoding="UTF-8" ?>\n')
 f.write('<svg width="' + str(sW) + 'mm" height="' + str(sL) +
         'mm" viewBox="0 0 ' + str(sW) + ' ' + str(sL) )
-f.write('" xmlns="http://www.w3.org/2000/svg" version="1.1">\n')
+f.write('" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink= "http://www.w3.org/1999/xlink">\n')
 
 # Make polygon of solid lines
 f.write('<polyline points="')
@@ -100,16 +100,17 @@ f.write('<line x1="'+str((L/2-t)+x_offset)+'" y1="'+str(y_offset-W/2+W)+'" x2="'
 
 # Add in text here
 fontSize = W/12
-f.write('<text font-family="Verdana" font-size="' + str(fontSize) + '" x="' +str((-L/2)-(L/6)+x_offset) + '" y="' + str(y_offset-((-W/2)+(W/3))) +
-        '" fill="black" transform="rotate(270, ' + str((-L/2)-(L/6)+x_offset) + ', ' + str(y_offset-((-W/2)+(W/3))) + ')">Digital </text>\n')
-f.write('<text font-family="Verdana" font-size="' + str(fontSize) + '" x="' +str((-L/2)-(L/10)+x_offset) + '" y="' + str(y_offset-((-W/2)+(W/6))) +
-        '" fill="black" transform="rotate(270, ' + str((-L/2)-(L/10)+x_offset) + ', ' + str(y_offset-((-W/2)+(W/6))) + ')">Manufacturing </text>\n')
+f.write('<text font-family="Verdana" font-size="' + str(fontSize) + '" x="' +str((-L/2)-(L/3)+x_offset) + '" y="' + str(y_offset-((-W/2)+(W/3))) +
+        '" fill="black" transform="rotate(270, ' + str((-L/2)-(L/3)+x_offset) + ', ' + str(y_offset-((-W/2)+(W/3))) + ')">Digital </text>\n')
+f.write('<text font-family="Verdana" font-size="' + str(fontSize) + '" x="' +str((-L/2)-(L/3)+fontSize+x_offset) + '" y="' + str(y_offset-((-W/2)+(W/6))) +
+        '" fill="black" transform="rotate(270, ' + str((-L/2)-(L/3)+fontSize+x_offset) + ', ' + str(y_offset-((-W/2)+(W/6))) + ')">Manufacturing </text>\n')
 
-f.write('<text font-family="Verdana" font-size="' + str(fontSize) + '" x="' +str((L/2)+2*H+x_offset) + '" y="' + str(y_offset-((-W/2)+(W/3))) +
-        '" fill="black" transform="rotate(90, ' + str((-L/2)-(L/6)+x_offset) + ', ' + str(y_offset-((-W/2)+(W/3))) + ')">Hods </text>\n')
-f.write('<text font-family="Verdana" font-size="' + str(fontSize) + '" x="' +str((L/2)+2*H-W/12+x_offset) + '" y="' + str(y_offset-((-W/2)+(W/6))) +
-        '" fill="black" transform="rotate(90, ' + str((-L/2)-(L/10)+x_offset) + ', ' + str(y_offset-((-W/2)+(W/6))) + ')">Fun Box </text>\n')
+f.write('<text font-family="Verdana" font-size="' + str(fontSize) + '" x="' +str((L/2)+1.25*H+x_offset-fontSize) + '" y="' + str(y_offset+(fontSize*(4/3))) +
+        '" fill="black" transform="rotate(270, ' + str((L/2)+1.25*H+x_offset-fontSize) + ', ' + str(y_offset+(fontSize*(4/3))) + ')">Hods </text>\n')
+f.write('<text font-family="Verdana" font-size="' + str(fontSize) + '" x="' +str((L/2)+1.25*H+x_offset) + '" y="' + str(y_offset+fontSize*(6/3)) +
+        '" fill="black" transform="rotate(270, ' + str((L/2)+1.25*H+x_offset) + ', ' + str(y_offset+fontSize*(6/3)) + ')">Fun Box </text>\n')
 
+f.write('<image xlink:href="https://upload.wikimedia.org/wikipedia/en/thumb/1/10/Columbia_Engineering_logo.svg/1200px-Columbia_Engineering_logo.svg.png" x="'+str(x_offset+L/2+(4/3)*H)+'" y="'+str(y_offset+W/6-1.25*t)+'" height="'+str(W/3-2.5*t)+'" width="'+str(W/3-2.5*t)+'" transform="rotate(270,'+str(x_offset+L/2+(4/3)*H)+','+str(y_offset+W/6-1.25*t)+')"/>\n')
 #Make solid lines for the two pockets
 #pocket 1
 x1=2*t-L/2+x_offset
