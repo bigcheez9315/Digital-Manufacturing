@@ -98,6 +98,12 @@ f.write('<line x1="'+str((L/2-t)+x_offset)+'" y1="'+str(y_offset-W/2+W)+'" x2="'
 f.write('<line x1="'+str((L/2-t)+x_offset)+'" y1="'+str(y_offset-W/2)+'" x2="'+str((t-L/2)+x_offset)+'" y2="'+str(y_offset-W/2)+'" stroke = "blue" stroke-dasharray="1"/>\n')
 f.write('<line x1="'+str((L/2-t)+x_offset)+'" y1="'+str(y_offset-W/2+W)+'" x2="'+str((t-L/2)+x_offset)+'" y2="'+str(y_offset-W/2+W)+'" stroke = "blue" stroke-dasharray="1"/>\n')
 
+# Add in text here
+fontSize = W/12
+f.write('<text font-family="Verdana" font-size="' + str(fontSize) + '" x="' +str((-L/2)-(L/6)+x_offset) + '" y="' + str(y_offset-((-W/2)+(W/3))) +
+        '" fill="black" transform="rotate(270, ' + str((-L/2)-(L/6)+x_offset) + ', ' + str(y_offset-((-W/2)+(W/3))) + ')">Digital </text>\n')
+f.write('<text font-family="Verdana" font-size="' + str(fontSize) + '" x="' +str((-L/2)-(L/10)+x_offset) + '" y="' + str(y_offset-((-W/2)+(W/6))) +
+        '" fill="black" transform="rotate(270, ' + str((-L/2)-(L/10)+x_offset) + ', ' + str(y_offset-((-W/2)+(W/6))) + ')">Manufacturing </text>\n')
 
 #Make solid lines for the two pockets
 #pocket 1
