@@ -133,6 +133,30 @@ f.write('<text font-family="Verdana" font-size="' + str(fontSize) + '" x="' +str
 """
 f.write('<image xlink:href="https://upload.wikimedia.org/wikipedia/en/thumb/1/10/Columbia_Engineering_logo.svg/1200px-Columbia_Engineering_logo.svg.png" x="'+str(x_offset+L/2+(4/3)*H)+'" y="'+str(y_offset+W/6-1.25*t)+'" height="'+str(W/3-2.5*t)+'" width="'+str(W/3-2.5*t)+'" transform="rotate(270,'+str(x_offset+L/2+(4/3)*H)+','+str(y_offset+W/6-1.25*t)+')"/>\n')
 #f.write('<image xlink:href="https://upload.wikimedia.org/wikipedia/en/thumb/1/10/Columbia_Engineering_logo.svg/1200px-Columbia_Engineering_logo.svg.png" x="'+str(x_offset+L/2+(4/3)*H)+'" y="'+str(y_offset+W/6-1.25*t)+'" height="'+str(W/3-2.5*t)+'" width="'+str(W/3-2.5*t)+'" transform="rotate(270,'+str(x_offset+L/2+(4/3)*H)+','+str(y_offset+W/6-1.25*t)+')"/>\n')
+
+
+#######FRACTAL IN PROGRESS
+
+f.write('<polygon points="'+str(x_offset-L/4)+','+str(H*(1/16+7/32))+' '+str(x_offset-L/4)+','+str(H*(1/16+21/32))+' '+str(x_offset)+','+str(H*(15/16))+' '+str(x_offset+L/4)+','+str(H*(1/16+21/32))+' '+str(x_offset+L/4)+','+str(H*(1/16+7/32))+' '+str(x_offset)+','+str(H*(1/16))+'"  style="fill:none;stroke:green;stroke-width:1" />')
+f.write('<line x1="'+str(x_offset-L/4)+'" y1="'+str(H*(1/16+7/32))+'" x2="'+str(x_offset+L/4)+'" y2="'+str(H*(1/16+21/32))+'" stroke = "green" stroke-width="1"/>\n')
+f.write('<line x1="'+str(x_offset-L/4)+'" y1="'+str(H*(1/16+21/32))+'" x2="'+str(x_offset+L/4)+'" y2="'+str(H*(1/16+7/32))+'" stroke = "green" stroke-width="1"/>\n')
+f.write('<line x1="'+str(x_offset)+'" y1="'+str(H*(1/16))+'" x2="'+str(x_offset)+'" y2="'+str(H*(15/16))+'" stroke = "green" stroke-width="1"/>\n')
+"""
+f.write('<defs>\n')
+f.write('   <g id="hex">\n')
+f.write('      <polygon points="229.3,627.5 83.6,375.5 229.3,123.5 520.7,123.5 666.4,375.5 520.7,627.5" 	style="fill:none;stroke:black;stroke-width:3" />\n')
+f.write('      <line x1="'+str(x_offset-L/4)+'" y1="'+str(H*(1/16+7/32))+'" x2="'+str(x_offset+L/4)+'" y2="'+str(H*(1/16+21/32))+'" stroke = "blue" stroke-dasharray="1"/>\n')
+f.write('      <line x1="'+str(x_offset-L/4)+'" y1="'+str(H*(1/16+21/32))+'" x2="'+str(x_offset+L/4)+'" y2="'+str(H*(1/16+7/32))+'" stroke = "blue" stroke-dasharray="1"/>\n')
+f.write('      <line x1="'+str(x_offset)+'" y1="'+str(H*(1/16+7/32))+'" x2="'+str(x_offset)+'" y2="'+str(H*(1/16+21/32))+'" stroke = "blue" stroke-dasharray="1"/>\n')
+f.write('   </g>\n')
+f.write('</defs>\n') 
+f.write('<use xlink:href="hex" />\n')
+"""
+
+
+
+
+
 #Make solid lines for the two pockets
 #pocket 1
 x1=2*t-L/2+x_offset
