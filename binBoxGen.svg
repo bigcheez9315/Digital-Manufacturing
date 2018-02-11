@@ -20,7 +20,7 @@ stroke-width="1" stroke = "red" fill="none" />
 <line x1="285.0" y1="275.0" x2="139.0" y2="275.0" stroke = "red" stroke-dasharray="3"/>
 <text text-anchor="middle" font-family="Cooper Black" font-size="13.5" x="113.875" y="200.0" fill="blue" transform="rotate(270, 113.875, 200.0)">DIGITAL </text>
 <text text-anchor="middle" font-family="Cooper Black" font-size="13.5" x="128.875" y="200.0" fill="blue" transform="rotate(270, 128.875, 200.0)">MANUFACTURING </text>
-<text text-anchor="middle" font-family="Cooper Black" font-size="13.5" x="447.25" y="200.0" fill="blue" transform="rotate(270, 447.25, 200.0)">KEVINS BOX</text>
+<text text-anchor="middle" font-family="Cooper Black" font-size="13.5" x="447.25" y="200.0" fill="blue" transform="rotate(270, 447.25, 200.0)">GLUE STICKS</text>
 <image xlink:href="https://upload.wikimedia.org/wikipedia/en/thumb/1/10/Columbia_Engineering_logo.svg/1200px-Columbia_Engineering_logo.svg.png" x="474.5" y="230.0" height="60.0" width="60.0" transform="rotate(270,474.5,230.0)"/>
 <defs>
    <g id="hex">
