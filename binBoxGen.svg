@@ -1,78 +1,81 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1">
-<polyline points="30.0,194.906666667 30.0,172.24 38.0,167.621197846 38.0,135.6 139.6,135.6 151.6,131.6 159.6,131.6 210.4,131.6 159.6,131.6 159.6,80.8 210.4,80.8 269.2,30.0 286.6,30.0 337.4,30.0 337.4,131.6 286.6,131.6 337.4,131.6 396.2,131.6 408.2,135.6 509.8,135.6 509.8,167.621197846 517.8,172.24 517.8,194.906666667 509.8,199.52546882 509.8,229.2 408.2,229.2 396.2,233.2 337.4,233.2 286.6,233.2 337.4,233.2 337.4,334.8 269.2,334.8 210.4,284.0 159.6,284.0 159.6,233.2 210.4,233.2 159.6,233.2 151.6,233.2 139.6,229.2 38.0,229.2 38.0,199.52546882 30.0,194.906666667 "
+<svg width="15695.839999999997mm" height="23425.76mm" viewBox="0 0 15695.839999999997 23425.76" xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink= "http://www.w3.org/1999/xlink">
+<polyline points="0.0,200.0 0.0,182.25 4.0,179.397507961 4.0,127.5 54.0,127.5 60.0,125.0 64.0,125.0 64.0,50.0 139.0,50.0 212.0,0.0 285.0,0.0 360.0,0.0 360.0,125.0 412.0,125.0 414.0,125.0 420.0,127.5 545.0,127.5 545.0,179.397507961 549.0,182.25 549.0,200.0 549.0,200.0 549.0,217.75 545.0,220.602492039 545.0,272.5 420.0,272.5 414.0,275.0 412.0,275.0 360.0,275.0 360.0,400.0 285.0,400.0 212.0,400.0 139.0,350.0 64.0,350.0 64.0,275.0 60.0,275.0 54.0,272.5 4.0,272.5 4.0,220.602492039 0.0,217.75 0.0,200.0 "
 stroke-width="1" stroke = "red" fill="none" />
-<path d="M214.39999999999998 101.30666666666667
- L 214.39999999999998 78.64
- A 2.0 2.0 0 0 1 218.39999999999998 78.64
- L 218.39999999999998 101.30666666666667
- A 2.0 2.0 0 0 1 214.39999999999998 101.30666666666667"
+<line x1="64.0" y1="125.0" x2="139.0" y2="125.0" stroke = "red" stroke-width="1"/>
+<line x1="64.0" y1="275.0" x2="139.0" y2="275.0" stroke = "red" stroke-width="1"/>
+<line x1="285.0" y1="125.0" x2="360.0" y2="125.0" stroke = "red" stroke-width="1"/>
+<line x1="285.0" y1="275.0" x2="360.0" y2="275.0" stroke = "red" stroke-width="1"/>
+<line x1="54.0" y1="127.5" x2="54.0" y2="272.5" stroke = "red" stroke-dasharray="3"/>
+<line x1="60.0" y1="125.0" x2="60.0" y2="275.0" stroke = "red" stroke-dasharray="3"/>
+<line x1="137.0" y1="125.0" x2="137.0" y2="275.0" stroke = "red" stroke-dasharray="3"/>
+<line x1="287.0" y1="125.0" x2="287.0" y2="275.0" stroke = "red" stroke-dasharray="3"/>
+<line x1="420.0" y1="127.5" x2="420.0" y2="272.5" stroke = "red" stroke-dasharray="3"/>
+<line x1="414.0" y1="125.0" x2="414.0" y2="275.0" stroke = "red" stroke-dasharray="3"/>
+<line x1="139.0" y1="50.0" x2="139.0" y2="125.0" stroke = "red" stroke-dasharray="3"/>
+<line x1="139.0" y1="350.0" x2="139.0" y2="275.0" stroke = "red" stroke-dasharray="3"/>
+<line x1="285.0" y1="125.0" x2="285.0" y2="0.0" stroke = "red" stroke-dasharray="3"/>
+<line x1="285.0" y1="275.0" x2="285.0" y2="400.0" stroke = "red" stroke-dasharray="3"/>
+<line x1="285.0" y1="125.0" x2="139.0" y2="125.0" stroke = "red" stroke-dasharray="3"/>
+<line x1="285.0" y1="275.0" x2="139.0" y2="275.0" stroke = "red" stroke-dasharray="3"/>
+<text text-anchor="middle" font-family="Cooper Black" font-size="13.5" x="113.875" y="200.0" fill="blue" transform="rotate(270, 113.875, 200.0)">DIGITAL </text>
+<text text-anchor="middle" font-family="Cooper Black" font-size="13.5" x="128.875" y="200.0" fill="blue" transform="rotate(270, 128.875, 200.0)">MANUFACTURING </text>
+<text text-anchor="middle" font-family="Cooper Black" font-size="13.5" x="447.25" y="200.0" fill="blue" transform="rotate(270, 447.25, 200.0)">KEVINS BOX</text>
+<image xlink:href="https://upload.wikimedia.org/wikipedia/en/thumb/1/10/Columbia_Engineering_logo.svg/1200px-Columbia_Engineering_logo.svg.png" x="474.5" y="230.0" height="60.0" width="60.0" transform="rotate(270,474.5,230.0)"/>
+<defs>
+   <g id="hex">
+<polygon points="174.5,35.15625 174.5,89.84375 212.0,117.1875 249.5,89.84375 249.5,35.15625 212.0,7.8125"  style="fill:none;stroke:blue;stroke-width:1" /><line x1="174.5" y1="35.15625" x2="249.5" y2="89.84375" stroke = "blue" stroke-width="1"/>
+<line x1="174.5" y1="89.84375" x2="249.5" y2="35.15625" stroke = "blue" stroke-width="1"/>
+<line x1="212.0" y1="7.8125" x2="212.0" y2="117.1875" stroke = "blue" stroke-width="1"/>
+   </g>
+</defs>
+<g id="hex1">
+<use xlink:href="#hex" transform="translate(53.0, 15.625) scale(0.75)" /> 
+ </g><g id="hex2">
+<use xlink:href="#hex1" transform="translate(53.0, 15.625) scale(0.75)" /> 
+ </g><g id="hex3">
+<use xlink:href="#hex2" transform="translate(53.0, 15.625) scale(0.75)" /> 
+ </g><g id="hex4">
+<use xlink:href="#hex3" transform="translate(53.0, 15.625) scale(0.75)" /> 
+ </g><g id="hex5">
+<use xlink:href="#hex4" transform="translate(53.0, 15.625) scale(0.75)" /> 
+ </g><g id="hex6">
+<use xlink:href="#hex5" transform="translate(53.0, 15.625) scale(0.75)" /> 
+ </g><g id="hex7">
+<use xlink:href="#hex6" transform="translate(53.0, 15.625) scale(0.75)" /> 
+ </g><g id="hex8">
+<use xlink:href="#hex7" transform="translate(53.0, 15.625) scale(0.75)" /> 
+ </g><g id="hex9">
+<use xlink:href="#hex8" transform="translate(53.0, 15.625) scale(0.75)" /> 
+ </g><g id="hex10">
+<use xlink:href="#hex9" transform="translate(53.0, 15.625) scale(0.75)" /> 
+ </g><g id="hex11">
+<use xlink:href="#hex10" transform="translate(53.0, 15.625) scale(0.75)" /> 
+ </g><use xlink:href="#hex" />
+<use xlink:href="#hex1" />
+<use xlink:href="#hex2" />
+<use xlink:href="#hex3" />
+<use xlink:href="#hex4" />
+<use xlink:href="#hex5" />
+<use xlink:href="#hex6" />
+<use xlink:href="#hex7" />
+<use xlink:href="#hex8" />
+<use xlink:href="#hex9" />
+<use xlink:href="#hex10" />
+<use xlink:href="#hex11" />
+<path d="M141.0 217.75
+ L 141.0 182.25
+ A 1.0 1.0 0 0 1 143.0 182.25
+ L 143.0 217.75
+ A 1.0 1.0 0 0 1 141.0 217.75"
  stroke="red" fill="none" stroke-width="1"/>
-<line stroke-dasharray="5, 5" 	 x1="30.0" y1="182.4" x2="139.6" y2="182.4" /> 
-<line stroke-dasharray="5, 5" 	 x1="139.6" y1="182.4" x2="139.6" y2="135.6" /> 
-<line stroke-dasharray="5, 5" 	 x1="139.6" y1="135.6" x2="139.6" y2="229.2" /> 
-<line stroke-dasharray="5, 5" 	 x1="139.6" y1="229.2" x2="139.6" y2="182.4" /> 
-<line stroke-dasharray="5, 5" 	 x1="139.6" y1="182.4" x2="151.6" y2="182.4" /> 
-<line stroke-dasharray="5, 5" 	 x1="151.6" y1="182.4" x2="151.6" y2="131.6" /> 
-<line stroke-dasharray="5, 5" 	 x1="151.6" y1="131.6" x2="151.6" y2="233.2" /> 
-<line stroke-dasharray="5, 5" 	 x1="151.6" y1="233.2" x2="151.6" y2="182.4" /> 
-<line stroke-dasharray="5, 5" 	 x1="151.6" y1="182.4" x2="155.6" y2="182.4" /> 
-<line stroke-dasharray="5, 5" 	 x1="155.6" y1="182.4" x2="155.6" y2="131.6" /> 
-<line stroke-dasharray="5, 5" 	 x1="155.6" y1="131.6" x2="155.6" y2="233.2" /> 
-<line stroke-dasharray="5, 5" 	 x1="155.6" y1="233.2" x2="155.6" y2="182.4" /> 
-<line stroke-dasharray="5, 5" 	 x1="155.6" y1="182.4" x2="181.0" y2="182.4" /> 
-<line stroke-dasharray="5, 5" 	 x1="181.0" y1="182.4" x2="181.0" y2="131.6" /> 
-<line stroke-dasharray="5, 5" 	 x1="181.0" y1="131.6" x2="181.0" y2="233.2" /> 
-<line stroke-dasharray="5, 5" 	 x1="181.0" y1="233.2" x2="181.0" y2="182.4" /> 
-<line stroke-dasharray="5, 5" 	 x1="181.0" y1="182.4" x2="206.4" y2="182.4" /> 
-<line stroke-dasharray="5, 5" 	 x1="206.4" y1="182.4" x2="206.4" y2="131.6" /> 
-<line stroke-dasharray="5, 5" 	 x1="206.4" y1="131.6" x2="206.4" y2="233.2" /> 
-<line stroke-dasharray="5, 5" 	 x1="206.4" y1="233.2" x2="206.4" y2="182.4" /> 
-<line stroke-dasharray="5, 5" 	 x1="206.4" y1="182.4" x2="269.2" y2="182.4" /> 
-<line stroke-dasharray="5, 5" 	 x1="269.2" y1="182.4" x2="269.2" y2="131.6" /> 
-<line stroke-dasharray="5, 5" 	 x1="269.2" y1="131.6" x2="210.4" y2="131.6" /> 
-<line stroke-dasharray="5, 5" 	 x1="210.4" y1="131.6" x2="210.4" y2="80.8" /> 
-<line stroke-dasharray="5, 5" 	 x1="210.4" y1="80.8" x2="210.4" y2="131.6" /> 
-<line stroke-dasharray="5, 5" 	 x1="210.4" y1="131.6" x2="286.6" y2="131.6" /> 
-<line stroke-dasharray="5, 5" 	 x1="286.6" y1="131.6" x2="286.6" y2="30.0" /> 
-<line stroke-dasharray="5, 5" 	 x1="286.6" y1="30.0" x2="286.6" y2="131.6" /> 
-<line stroke-dasharray="5, 5" 	 x1="286.6" y1="131.6" x2="269.2" y2="131.6" /> 
-<line stroke-dasharray="5, 5" 	 x1="269.2" y1="131.6" x2="269.2" y2="233.2" /> 
-<line stroke-dasharray="5, 5" 	 x1="269.2" y1="233.2" x2="210.4" y2="233.2" /> 
-<line stroke-dasharray="5, 5" 	 x1="210.4" y1="233.2" x2="210.4" y2="284.0" /> 
-<line stroke-dasharray="5, 5" 	 x1="210.4" y1="284.0" x2="210.4" y2="233.2" /> 
-<line stroke-dasharray="5, 5" 	 x1="210.4" y1="233.2" x2="286.6" y2="233.2" /> 
-<line stroke-dasharray="5, 5" 	 x1="286.6" y1="233.2" x2="286.6" y2="334.8" /> 
-<line stroke-dasharray="5, 5" 	 x1="286.6" y1="334.8" x2="286.6" y2="233.2" /> 
-<line stroke-dasharray="5, 5" 	 x1="286.6" y1="233.2" x2="269.2" y2="233.2" /> 
-<line stroke-dasharray="5, 5" 	 x1="269.2" y1="233.2" x2="269.2" y2="182.4" /> 
-<line stroke-dasharray="5, 5" 	 x1="269.2" y1="182.4" x2="290.6" y2="182.4" /> 
-<line stroke-dasharray="5, 5" 	 x1="290.6" y1="182.4" x2="290.6" y2="131.6" /> 
-<line stroke-dasharray="5, 5" 	 x1="290.6" y1="131.6" x2="290.6" y2="233.2" /> 
-<line stroke-dasharray="5, 5" 	 x1="290.6" y1="233.2" x2="290.6" y2="182.4" /> 
-<line stroke-dasharray="5, 5" 	 x1="290.6" y1="182.4" x2="392.2" y2="182.4" /> 
-<line stroke-dasharray="5, 5" 	 x1="392.2" y1="182.4" x2="392.2" y2="131.6" /> 
-<line stroke-dasharray="5, 5" 	 x1="392.2" y1="131.6" x2="392.2" y2="233.2" /> 
-<line stroke-dasharray="5, 5" 	 x1="392.2" y1="233.2" x2="392.2" y2="182.4" /> 
-<line stroke-dasharray="5, 5" 	 x1="392.2" y1="182.4" x2="396.2" y2="182.4" /> 
-<line stroke-dasharray="5, 5" 	 x1="396.2" y1="182.4" x2="396.2" y2="131.6" /> 
-<line stroke-dasharray="5, 5" 	 x1="396.2" y1="131.6" x2="396.2" y2="233.2" /> 
-<line stroke-dasharray="5, 5" 	 x1="396.2" y1="233.2" x2="396.2" y2="182.4" /> 
-<line stroke-dasharray="5, 5" 	 x1="396.2" y1="182.4" x2="408.2" y2="182.4" /> 
-<line stroke-dasharray="5, 5" 	 x1="408.2" y1="182.4" x2="408.2" y2="135.6" /> 
-<line stroke-dasharray="5, 5" 	 x1="408.2" y1="135.6" x2="408.2" y2="229.2" /> 
-<line stroke-dasharray="5, 5" 	 x1="408.2" y1="229.2" x2="408.2" y2="182.4" /> 
-<line stroke-dasharray="5, 5" 	 x1="408.2" y1="182.4" x2="428.52" y2="182.4" /> 
-<line stroke-dasharray="5, 5" 	 x1="428.52" y1="182.4" x2="428.52" y2="135.6" /> 
-<line stroke-dasharray="5, 5" 	 x1="428.52" y1="135.6" x2="428.52" y2="229.2" /> 
-<line stroke-dasharray="5, 5" 	 x1="428.52" y1="229.2" x2="428.52" y2="182.4" /> 
-<line stroke-dasharray="5, 5" 	 x1="428.52" y1="182.4" x2="509.8" y2="182.4" /> 
+<path d="M281.0 217.75
+ L 281.0 182.25
+ A 1.0 1.0 0 0 1 283.0 182.25
+ L 283.0 217.75
+ A 1.0 1.0 0 0 1 281.0 217.75"
+ stroke="red" fill="none" stroke-width="1"/>
 
 
 <style><![CDATA[
-line{
-	 stroke: blue;
-	 stroke-width: 2;
-}
-]]></style>
 </svg>
