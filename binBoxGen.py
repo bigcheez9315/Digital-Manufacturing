@@ -36,18 +36,13 @@ while U.lower() not in ("in", "mm"):
     U = U.lower()
 print("Selected: " + U)
 
-SL = in2mm(sL)
-SW = in2mm(sW)
-
 if U == "mm":
-    SL = in2mm(sL)
-    SW = in2mm(sW)
     sL = in2mm(sL)
     sW = in2mm(sW)    
 # User selects the width, length, height and thickness of the box from the user
 user_inputs = inputs()
 
-while user_inputs[4] > SL or user_inputs[5] > SW:
+while user_inputs[4] > sL or user_inputs[5] > sW:
     print("")
     print("Exceeded cardboard dimensions "+str(int(sL))+"x"+str(int(sW))+" "+"'"+U+"'!")
     print("Your layout requires a cardboard size of "+str(int(user_inputs[4]))+"x"+str(int(user_inputs[5]))+" "+"'"+U+"'.")
